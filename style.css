@@ -1,0 +1,855 @@
+/* STANDARD BAMP STYLES - THESE STYLES ARE LINKED TO COMMON CONTENT BOXES */
+
+/* GLOBAL STYLES */
+
+body {
+	color: #666666;
+	font-size: 13px;
+	font-family: Trebuchet, Verdana, Arial, Sans-Serif;
+	padding:0;
+	margin:0;
+	background: #dfe4f1 url(images/bg.html) repeat-y center top;
+	text-align: center;
+}
+
+div.container {
+	width: 990px;
+	margin: 0 auto auto;
+	text-align: left;
+}
+
+.home_body {
+	background: #dfe4f1 url(images/home_bg.jpg) repeat-y center top;
+}
+
+.template_header {
+  clear: both;
+}
+
+#discog_selector {
+	float: left;
+	border-style: solid;
+	border-width: 1px;
+}
+
+#discog_selector_inner {
+	margin: 10px;
+	width: 400px;
+}
+
+.loginnav {
+	margin-top: 3px;
+	text-align: right;
+}
+
+.loginnav a {
+	font-size: 12px;
+}
+
+.home_text_input {
+	width: 118px;
+}
+
+.nav {
+	height: 27px;
+	background: url(images/nav_bg.gif) repeat-x;
+}
+
+#homebanner {
+	height: 27px;
+	background: url(images/banner2.png) repeat-x;
+}
+
+#oktoberfestbanner {
+	height: 27px;
+	background: url(images/banner1.png) repeat-x;
+}
+
+#home_other_photo {
+  padding-bottom: 10px;
+}
+
+.bio-photo {
+  padding-right: 25px;
+}
+
+td.grayrow {
+  background-color: #d8e2e5;
+}
+
+td.tanrow {
+  background-color: #eae0b9;
+  font-size: 15px;
+}
+
+.frankemail {
+  margin-bottom: -6px;
+}
+
+.photo_welcome {
+	background-image: url(images/photo_welcome.html);
+}
+
+.photo_about {
+	background-image: url(images/photo_about.html);
+}
+.photo_chronology {
+	background-image: url(images/photo_about.html);
+}
+.photo_awards {
+	background-image: url(images/photo_about.html);
+}
+.photo_news {
+	background-image: url(images/photo_news.html);
+}
+.photo_store {
+	background-image: url(images/photo_store.html);
+}
+.photo_tour {
+	background-image: url(images/photo_tour.html);
+}
+.photo_appearances {
+	background-image: url(images/photo_appearances.html);
+}
+.photo_video {
+	background-image: url(images/photo_video.html);
+}
+.photo_music {
+	background-image: url(images/photo_music.html);
+}
+.photo_holidayjukebox {
+	background-image: url(images/photo_music.html);
+}
+.photo_photos {
+	background-image: url(images/photo_photos.html);
+}
+.photo_mediasub {
+	background-image: url(images/photo_mediasub.html);
+}
+.photo_mediasub_c {
+	background-image: url(images/photo_mediasub_c.html);
+}
+.photo_friends {
+	background-image: url(images/photo_friends.html);
+}
+.photo_toolkit, .photo_downloads, .photo_widgets {
+	background-image: url(images/photo_toolkit.html);
+}
+.photo_forums {
+	background-image: url(images/photo_forums.html);
+}
+.photo_fanclub, .photo_join, .photo_login, .photo_help, .photo_changeuser, .photo_seatinglogin, .photo_prefseatpreview {
+	background-image: url(images/photo_fanclub_main.html);
+	background-repeat: no-repeat;
+}
+.photo_emupdates, .photo_emupdates_c, .photo_double_optin {
+	background-image: url(images/photo_emupdates.html);
+}
+.photo_terms {
+	background-image: url(images/photo_terms.html);
+}
+.photo_privacy {
+	background-image: url(images/photo_privacy.html);
+}
+.photo_contact {
+	background-image: url(images/photo_contact.html);
+}
+.photo_australia {
+	background-image: url(images/flash_banner_aussietour.html);
+}
+.photo_australia_presale {
+	background-image: url(images/australia_presale.html);
+}
+.photo_interview {
+	background-image: url(images/photo_aussietour.html);
+}
+
+.photo_ringoffire {
+	background-image: url(images/ringoffire-sub2.html);
+}
+
+a img {
+	border: none;
+}
+
+a {
+	font-family:Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#666666;
+	text-decoration: underline;
+}
+a:hover {
+	font-family: Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: 000000;
+	text-decoration: underline;
+}
+
+p {
+	font-family: Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: 666666;
+}
+
+div.banner {
+	display: inline;
+}
+
+div.bannertop {
+	position: absolute;
+	left: 10px;
+	top: 5px;
+	padding: 5px;
+	border: medium groove #0000FF;
+}
+
+div.leftnav {
+	position: absolute;
+	left: 10px;
+	width: 150px;
+	top: 155px;
+	padding: 5px;
+	border: medium groove #0000FF;
+}
+
+div.body {
+	position: absolute;
+	left: 175px;
+	top: 0px;
+	width: 800px;
+	padding: 5px;
+	border: medium groove #0000FF;
+}
+
+div.bannerbottom {
+	position: absolute;
+	bottom: 10px;
+	padding: 5px;
+	border: medium groove #0000FF;
+}
+
+div.footer {
+  background-image: url(images/footer_gradient.jpg);
+	background-repeat: no-repeat;
+	width: 990px;
+	height: 105px;
+}
+
+p.footer-left {
+  text-align: left;
+	padding-left: 15px;
+	padding-top: 45px;
+	/*font-family: times, serif;*/
+	font-size: 100%;
+}
+
+p.footer-right {
+  text-align: right;
+	padding-top: 55px;
+	padding-right: 15px;
+}
+
+.errors {
+	font-family:Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #FF0000;
+}
+
+h1 {
+	font-size: 15px;
+	color: 666666;
+}
+
+h2 {
+	font-size: 14px;
+}
+
+/* CB ARTICLES STYLES */
+
+#home_header_headlines {
+  background-image: url(images/home_header_headlines.jpg);
+	height: 36px;
+	width: 330px;
+	border-left: 10px;
+	font-family: Times, serif;
+	font-size: 150%;
+}
+
+#musical_entertainment {
+  padding-top: 10px;
+	padding-left: 10px;
+}
+
+.articles_headline {
+	font-family:Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color: #666666;
+	font-weight: bold;
+}
+
+.music_body {
+	font-family:Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#666666;
+	margin-left: 0px;
+	width: 350px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #11243A;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 5px;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+.articles_body {
+	font-family:Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#666666;
+	margin-left: 0px;
+	width: 635px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #11243A;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 5px;
+	background-image: url(images/home_alt_news_bkg.html);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.articles_date {
+	font-family:Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#666666;
+}
+
+
+#articles_header {
+	margin-bottom: 10px;
+}
+#articles_box {
+	width: 320px;
+	float: left;
+	padding-bottom: 10px;
+	background-position: top;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.articles_div {
+	height: 1px;
+	background-color: #666666;
+}
+.articles_alt1, .articles_alt2 {
+	background-image: url(images/home_alt_news_bkg.html);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+.articles_alt1 {
+	background-image: url(images/home_alt_news_bkg.html);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+
+/* CB ARTICLES_IN STYLES */
+
+.articles_in_div {
+	height: 1px;
+	background-color: #666666;
+}
+.articles_in_date {
+	font-family:Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight: normal;
+	color:#666666;
+	width: 90px;
+}	
+.articles_in_headline {
+	font-family:Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color: #666666;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+.articles_in_body {
+	font-family:Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#666666;
+	margin-left: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 625px;
+	background-image: url(images/alt_news_bkg.html);
+	background-repeat: no-repeat;
+	background-position: center top;	
+}	
+#articles_in_box {
+	width: 625px;
+	float: left;
+	padding-bottom: 10px;
+}
+.articles_in_alt1, .articles_in_alt2 {
+	background-image: url(images/alt_news_bkg.html);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.articles_in_alt1 {
+	background-image: url(images/alt_news_bkg.html);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+
+.articles_in_ind_send_friend {
+	font-family: Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: 666666;
+}
+
+
+/* CB TOURDATES STYLES */
+
+#tourdates_box {
+	width: 320px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.tourdates_alt1, .tourdates_alt2 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.tourdates_alt1 {
+	background-color: #ebebeb;
+}
+
+.tourdates_headline {
+	font-family:Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color: #666666;
+}
+
+.tourdates_date {
+	float: left;
+	width: 90px;
+	margin-left: 10px;
+	color: #666666;
+}
+
+.tourdates_body {
+	font-family:Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color:#000000;
+	margin-left: 100px;
+	width: 175px;
+}
+
+#tourdates_header {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.ccontent_in_ind_headline {
+	font-weight:bold;
+}
+
+#ccontent_ind_category_header {
+	margin-top:10px;
+	margin-bottom:10px;
+	font-weight:bold;
+}
+
+/* CB TOURDATES_IN_TABLE STYLES */
+#tourdates_in_table_box {
+	width: 640px;
+  font-size: 10px;
+}
+
+#tourdates_in_table_box a {
+  font-size: 10px;
+}
+
+.tourdates_in_table_alt1, .tourdates_in_table_alt2 {
+	background-image: url(images/alt_news_bkg.html);
+	background-repeat: no-repeat;
+	background-position: center top;
+	padding-top: 10px;
+ 	padding-bottom: 10px;
+}
+
+tr.tourdates_in_table_alt1, .tourdates_in_table_alt2 {
+  position: relative;
+}
+
+td.tourdates_in_table_date, td.tourdates_in_table_body, td.tourdates_in_table_vip, td.tourdates_in_table_win, td.tourdates_in_table_tickets, td.tourdates_in_table_details_click {
+  background-image: none !important;
+}
+
+.tourdates_in_table_headline {
+	font-family:Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color: #666666;
+}
+
+.tourdates_in_table_date, #tourdates_in_table_tableheader_date {
+  padding-left: 15px;
+  width: 70px;
+}
+
+.tourdates_in_table_preferred, #tourdates_in_table_tableheader_preferred {
+  width: 140px;
+}
+
+.tourdates_in_table_body, #tourdates_in_table_tableheader_location {
+  width: 272px;
+}
+.tourdates_in_table_tix, #tourdates_in_table_tableheader_tix {
+  width: 100px;
+}
+
+.tourdates_in_table_details_click, #tourdates_in_table_tableheader_details {
+  width: 54px;
+}
+
+#tourdates_in_table_tableheader {
+	background-color:#000000;
+	color:#ffffff;
+	padding-bottom: 10px;
+}
+
+/* CB TOURDATES_IN STYLES */
+#tourdates_in_box {
+	width: 625px;
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.tourdates_in_alt1, .tourdates_in_alt2 {
+	background-image: url(images/alt_news_bkg.html);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.tourdates_in_alt1 {
+	background-image: url(images/alt_news_bkg.html);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.tourdates_in_headline {
+	font-family:Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color: #666666;
+}
+
+.tourdates_in_date {
+	float: left;
+	margin-left: 10px;
+	width: 190px;
+	padding-top: 10px;
+}
+
+.tourdates_in_body {
+	font-family:Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#666666;
+	width: 375px;
+	margin-left: 200px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.tourdates_in_send_friend {
+	padding: 10px;
+}
+
+#tourdates_in_header {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#tourdates_in_tagline {
+	margin-bottom: 10px;
+}
+
+#tourdates_in_tableheader {
+	background-color:#000000;
+	color:#ffffff;
+}
+
+#tourdates_in_tableheader_date {
+	text-align:left;
+	margin-left:10px;
+}
+
+#tourdates_in_tableheader_location {
+	text-align:left;
+	margin-left:150px;
+}
+
+#tourdates_in_tableheader_details {
+	text-align:left;
+	margin-left:168px;
+}
+
+div.tourdates_in_details_click {
+	float: right;
+	width: 185px;
+	padding-top: 10px;
+}
+.tourdates_details {
+	border-style: dotted;
+	border-width: 1px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.tourdates_details_contents {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/* CB LINK_DIRECTORY STYLES */
+
+#link_directory_box table.link_directory_table tbody tr td {
+	padding-bottom: 20px;
+}
+
+#link_directory_box {
+	width: 600px;
+	float: right;
+}
+
+.link_directory_table {
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.link_directory_item_desc a {
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+}
+
+.link_directory_div {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: #eba348;
+}
+
+.link_directory_item_desc a {
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+}
+
+/* CB CCONTENT STYLES */
+
+#ccontent_box, .ccontent_in_ind_body {
+	width: 600px;
+	float: right;
+}
+
+.ccontent_div {
+	width: 600px;
+	height: 2px;
+	background-color: #eba348;
+}
+
+.ccontent_body {
+	font-family:Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color:#000000;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.ccontent_in_ind_body a {
+	color: #000;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/* CB BLOGHISTORY STYLES */
+
+#blog_history_box {
+	width: 150px;
+	float: right;
+}
+
+#blog_history_box > div {
+	margin-bottom: 5px;
+}
+
+/* CB MAINBLOG STYLES */
+
+#mainblog_box {
+	width: 430px;
+}
+.discography_top {
+	background-image: url(images/disco_bkg_top.html);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.discography_bottom {
+	background-image: url(images/disco_bkg_bottom.html);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.discography_middle_right {
+	background-image: url(images/disco_bkg_middle.html);
+	background-repeat: repeat-y;
+	background-position: left top;
+}
+.discography_middle_left {
+	background-image: url(images/disco_bkg_middle_left.html);
+	background-repeat: repeat-y;
+	background-position: left top;
+}
+
+/* CB DISCOGRAPHY STYLES */
+
+#discog_box {
+	margin-top: 0px;
+	margin-left: 460px;
+}
+
+#discog_tracks {
+	float: left;
+	margin-top: 10px;
+	width: 490px;
+}
+
+#discog_title {
+	font-family:Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#666666;
+	font-weight:bold;
+	padding-top:10;
+	margin-left: 260px;
+}	
+
+#discog_tracks_note {
+	font-family:Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#666666;
+	font-weight:bold;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-left: 260px;
+}
+
+#discog_image {
+	float: left;
+}
+
+#discog_desc {
+	margin-left: 450px;
+}
+
+#discog_purchase_link {
+	padding-top: 10px;
+	padding-bottom: 20px;
+	margin-left: 408px;
+}
+
+#accordion_title {
+	margin-left: 450px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.alightbox:link {
+	color: #000000;
+}	
+
+.alightbox:visited {
+	color: #000000;
+}	
+
+.alightbox a {
+	color: #000000;
+}	
+
+a .alightbox {
+	color: #000000;
+}
+
+div.accordion_toggle_odd {
+	background-color: #ececec;
+}
+
+#discog_selector_inner img {
+	margin-right: 7px;
+	margin-bottom: 7px;
+}
+
+#galleries_table {
+	border: 1px solid #cecece;
+}
+
+#galleries_table td {
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid #cecece;
+}
+
+.gallery_link {
+	height: 45px;
+}
+
+td.galleries_thumbnail_cell {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+td.galleries_title_cell {
+	background-image: url(images/photograd.html);
+	padding-top: 3px;
+	padding-bottom: 2px;
+}
+
+td.galleries_title_cell a {
+	font-size: 11px;
+	text-decoration: none;
+}
+
+#photos_table {
+  border: 1px solid #cecece;
+}
+
+#photos_table td {
+	height: 39px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid #cecece;
+}
+
+td.photos_thumbnail_cell {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+td.photos_title_cell {
+	background-image: url(images/photograd.html);
+	padding-top: 3px;
+	padding-bottom: 2px;
+}
+
+td.photos_title_cell a {
+	font-size: 11px;
+	text-decoration: none;
+}
