@@ -56,7 +56,40 @@ if(clicks> 1) { return false; }
 return true;
 } // -->
 </script>
+<style>
+  input[type=button], input[type=submit], input[type=reset] {
+    background-color: #76788A;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+textarea {
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+input[type=text] {
+    background-color: #f8f8f8;
+    border: 2px solid #000;
+    border-radius: 4px;
+    height: 20px;
+}
+input[type=email] {
+    background-color: #f8f8f8;
+    border: 2px solid #000;
+    border-radius: 4px;
+    height: 20px;
+}
 
+</style>
 </head>
 
 <body>
@@ -91,13 +124,13 @@ return true;
   <form action="https://formspree.io/dominikjwork@gmail.com"
       method="POST">
     <p>Name:
-    <input type="text" name="name" placeholder="John Doe">&nbsp;&nbsp;&nbsp;&nbsp;Email:
-    <input type="email" name="_replyto" placeholder="johndoe@email.com"></p>
-    <textarea style="height: 100px;width:400px;" name="message" placeholder="Type your message here."></textarea><br>
-    <input type="submit" value="Submit Contact Form" style="width:400px;">
+    <input type="text" name="name" placeholder=" John Doe">&nbsp;&nbsp;&nbsp;&nbsp;Email:
+    <input type="email" name="_replyto" placeholder=" johndoe@email.com"></p>
+    <textarea style="height: 150px;width:450px;" name="message" placeholder="Type your message here."></textarea><br>
+    <input type="submit" value="Submit Contact Form" style="width:450px;">
+    <input type="hidden" name="_format" value="plain" />
 </form>
-</center>  </tbody></table>
-
+</center>  
 </div>
 
 
