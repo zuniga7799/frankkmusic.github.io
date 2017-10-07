@@ -104,11 +104,20 @@ return true;
 						
 						
 						
-						
-	<script>var iframes = iFrameResize( [{options}], [css selector] || [iframe] );</script>
+	
 			
-<iframe width="100%" id="myIframe scrolling="no" src="https://phpdatadyakoubek.000webhostapp.com/index2.php" style="border:none;"></iframe>
-<script>iFrameResize({log:true}, '#myIframe')</script>
+<iframe width="100%" id="frame" scrolling="no" src="https://phpdatadyakoubek.000webhostapp.com/index2.php" style="border:none;"></iframe>
+<script>
+
+window.addEventListener("message", function(e){
+    var this_frame = document.getElementById("frame");
+    if (this_frame.contentWindow === e.source) {
+        this_frame.height = e.data.height + "px";
+        this_frame.style.height = e.data.height + "px";
+    }
+})
+</script>
+		
 														<strong>May, 2017</strong>	<br>
 
 May 5 -  Civic Center, Morton Grove, 12:30 - 1:30 pm, (Call: 888 600 2560 for reservations-Lunch at 11:30 am)<br>
