@@ -127,7 +127,20 @@ For all special events or themed parties, we take pride in working with the cust
 			<script>var iframes = iFrameResize( [{options}], [iframe] );</script>
 			
 <iframe width="100%" id="myIframe scrolling="no" src="https://phpdatadyakoubek.000webhostapp.com/" style="border:none;"></iframe>
-<script>iFrameResize({log:true}, '#myIframe')</script>
+<script type="text/javascript">
+  // Create browser compatible event handler.
+  var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+  var eventer = window[eventMethod];
+  var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+  // Listen for a message from the iframe.
+  eventer(messageEvent, function(e) {
+    if (isNaN(e.data)) return;
+
+    // replace #sizetracker with what ever what ever iframe id you need
+    document.getElementById('myIframe').style.height = e.data + 'px';
+
+  }, false);
+</script>
 			
 			
 		
