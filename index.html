@@ -128,6 +128,17 @@ For all special events or themed parties, we take pride in working with the cust
 			
 <iframe width="100%" id="frame" scrolling="no" src="https://phpdatadyakoubek.000webhostapp.com/" style="border:none;"></iframe>
 <script>
+	window.attachEvents("message", function(e){
+    var this_frame = document.getElementById("frame");
+    if (this_frame.contentWindow === e.source) {
+        this_frame.height = e.data.height + "px";
+        this_frame.style.height = e.data.height + "px";
+    }
+})		
+</script>
+			
+<script>
+
 window.addEventListener("message", function(e){
     var this_frame = document.getElementById("frame");
     if (this_frame.contentWindow === e.source) {
