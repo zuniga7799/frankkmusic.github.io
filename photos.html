@@ -14,6 +14,38 @@
 </head>
 
 <body>
+
+  <script>
+    function updateImages(){
+      var carousel = document.getElementById("carouselframe");
+      var hiddenImages = document.getElementById("imagehide");
+      var images = document.getElementsByClassName("taggedimage");
+      images = Array.from(images);
+      var aud = document.getElementById("Audience");
+      var okt = document.getElementById("Oktoberfest");
+      var per = document.getElementById("Performance");
+      var his = document.getElementById("History");
+      for(var i = 0; i < images.length; i++) {
+        hiddenImages.appendChild(images[i]);
+        images[i].classList.remove("active");
+        if(images[i].getAttribute("data-tags").includes("Audience") && aud.checked){
+          carousel.appendChild(images[i]);
+        }
+        if(images[i].getAttribute("data-tags").includes("Oktoberfest") && okt.checked){
+          carousel.appendChild(images[i]);
+        }
+        if(images[i].getAttribute("data-tags").includes("Performance") && per.checked){
+          carousel.appendChild(images[i]);
+        }
+        if(images[i].getAttribute("data-tags").includes("History") && his.checked){
+          carousel.appendChild(images[i]);
+        }
+      }
+      carousel.children[0].classList.add("active");
+    }
+
+  </script>
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -48,9 +80,102 @@
     </div>
   </nav>
   <div style="padding: 0;" class="jumbotron"><img alt="Accordian on right, frank and fran, band members on right of banner image" style="width: 100vw;" src="images/banner2.png"></div>
-  <Container>
-    
-  </Container>
+  <div class="Container">
+    <div class="row justify-content-center">
+      <div class="form-check">
+        <input oninput="updateImages()" class="form-check-input" type="checkbox" value="" id="Audience" checked>
+        <label class="form-check-label" for="flexCheckDefault">
+          Audience
+        </label>
+      </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="form-check">
+        <input oninput="updateImages()" class="form-check-input" type="checkbox" value="" id="Oktoberfest" checked>
+        <label class="form-check-label" for="flexCheckDefault">
+          Oktoberfest
+        </label>
+      </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="form-check">
+        <input oninput="updateImages()" class="form-check-input" type="checkbox" value="" id="Performance"checked>
+        <label class="form-check-label" for="flexCheckDefault">
+          Performance
+        </label>
+      </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="form-check">
+        <input oninput="updateImages()" class="form-check-input" type="checkbox" value="" id="History" checked>
+        <label class="form-check-label" for="flexCheckDefault">
+          History
+        </label>
+      </div>
+    </div>
+    <br><br><div class="row justify-content-center">Use Landscape on Mobile for the best experience.</div><br>
+    <div class="row justify-content-center">
+      <div style="width: 50vw;" id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div style="background-color: black;" id="carouselframe" class="carousel-inner">
+          <div style="background: black;" data-tags="Performance" class="taggedimage carousel-item active">
+            <img style="height: 40vh; width: auto; margin: auto;" class="d-block" src="images/20140123_195925.jpg" alt="Live Performance from 2014">
+          </div>
+          <div style="background: black;" data-tags="Audience" class="taggedimage carousel-item">
+            <img style="height: 40vh; width: auto; margin: auto;" class="d-block" src="images/20140123_200048.jpg" alt="Live Performance from 2014">
+          </div>
+          <div style="background: black;" data-tags="Performance" class="taggedimage carousel-item">
+            <img style="height: 40vh; width: auto; margin: auto;" class="d-block" src="images/franksax.jpg" alt="Live Performance with frank and sax player">
+          </div>
+          <div style="background: black;" data-tags="Performance-Oktoberfest" class="justify-content-center taggedimage carousel-item">
+            <img style="height: 40vh; width: auto; margin: auto;" class="d-block" src="images/frankfranoktoberfest.jpg" alt="Frank and Fran in Oktoberfest garb">
+          </div>
+
+          <div style="background: black;" data-tags="Performance" class="taggedimage carousel-item">
+            <img style="height: 40vh; width: auto; margin: auto;" class="d-block" src="images/band.jpg" alt="Christmas Performance">
+          </div>
+          <div style="background: black;" data-tags="Audience-History" class="taggedimage carousel-item">
+            <img style="height: 40vh; width: auto; margin: auto;" class="d-block" src="images/conti.jpg" alt="Frank and Dick Contino">
+          </div>
+          <div style="background: black;" data-tags="Audience" class="taggedimage carousel-item">
+            <img style="height: 40vh; width: auto; margin: auto;" class="d-block" src="images/IMG_6161.JPG" alt="Photo From Senior Fair 1">
+          </div>
+          <div style="background: black;" data-tags="Audience" class="justify-content-center taggedimage carousel-item">
+            <img style="height: 40vh; width: auto; margin: auto;" class="d-block" src="images/IMG_6262.JPG" alt="Photo From Senior Fair 2">
+          </div>
+
+          <div style="background: black;" data-tags="Performance" class="taggedimage carousel-item">
+            <img style="height: 40vh; width: auto; margin: auto;" class="d-block" src="images/IMG_6241.JPG" alt="Senior Fair Performance">
+          </div>
+          <div style="background: black;" data-tags="Performance" class="taggedimage carousel-item">
+            <img style="height: 40vh; width: auto; margin: auto;" class="d-block" src="images/seniorfair1.jpg" alt="Senior Fair 2016, Sponsored by Quinn and Madigan 1">
+          </div>
+          <div style="background: black;" data-tags="Performance" class="taggedimage carousel-item">
+            <img style="height: 40vh; width: auto; margin: auto;" class="d-block" src="images/seniorfair2.jpg" alt="Senior Fair 2016, Sponsored by Quinn and Madigan">
+          </div>
+          <div style="background: black;" data-tags="History-Audience" class="justify-content-center taggedimage carousel-item">
+            <img style="height: 40vh; width: auto; margin: auto;" class="d-block" src="images/vandyke.jpg" alt="Frank and Jerry Van Dyke, Mid America Club">
+          </div>
+
+          <div style="background: black;" data-tags="History" class="taggedimage carousel-item">
+            <img style="height: 40vh; width: auto; margin: auto;" class="d-block" src="images/newspaper.jpg" alt="Old newspaper clipping.">
+          </div>
+          <div style="background: black;" data-tags="History-Performance" class="taggedimage carousel-item">
+            <img style="height: 40vh; width: auto; margin: auto;" class="d-block" src="images/monami.jpg" alt=Frank Playing at Mon Ami>
+          </div>
+          <div style="background: black;" data-tags="Performance-Oktoberfest" class="taggedimage carousel-item">
+            <img style="height: 40vh; width: auto; margin: auto;" class="d-block" src="images/IMG_9762.jpg" alt="Oktoberfest Performance 1">
+          </div>
+          <div style="background: black;" data-tags="Performance-Oktoberfest" class="justify-content-center taggedimage carousel-item">
+            <img style="height: 40vh; width: auto; margin: auto;" class="d-block" src="images/IMG_9797.jpg" alt="Oktoberfest Performance 2">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div id="imagehide" style="display: none;"></div>
+  </div>
+
 
 </body>
 
